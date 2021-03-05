@@ -1,3 +1,4 @@
+/* Region général */
 * {
 	box-sizing: border-box;
 	margin:0;
@@ -8,39 +9,56 @@
 html {
 	font-size:62.5%;
 }
+
 body {
 	text-align: center;
 	font-family: Calibri, serif;
-	background: lightblue;
+	background: white;
+	margin-bottom: 5rem;
 }
+/* End the region général */
+
+/* Region Header and Footer */
 header, footer {
 	margin: 0;
 	padding: 0;
-	background: cyan;
 }
-footer {
-	position: absolute;
-	top: 750px;
+
+header {
+	box-shadow: #DDD 0 0 4px 4px;
+	display: inline-block;
 	width: 100%;
 }
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	box-shadow: #DDD 0 0 4px 4px;
+	background: white;
+}
+/* End the region Header and Footer */
+
+/* Region menu */
 ul {
-	display: flex;
 	list-style-type: none;
-	justify-content: space-around;
-	align-items: center;
+	display: flex;
+	justify-content: space-evenly;
 }
-li {
-	margin-right: 18px;
-}
+
 a {
 	text-decoration: none;
+	color: #666;
+	padding: 5px;
+	margin: 15px;
 }
-section, form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+
+a:hover {
+	background-color: rgb(194, 194, 194);
+	color: rgb(66, 66, 66);
 }
-section h1 {
-	margin: 8px;
-}
+/* End the region menu */
+
+/* Region section */
+
+/* End the region section */
